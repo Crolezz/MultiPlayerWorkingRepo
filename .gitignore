@@ -838,3 +838,6 @@ New Unity Project (1)/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
 New Unity Project (1)/Library/ScriptAssemblies/UnityEngine.UI.dll
 New Unity Project (1)/Library/shadercompiler-UnityShaderCompiler.exe0.log
 New Unity Project (1)/Library/StateCache/SceneView/c7de8f-mainStage.json
+*.cache
+*.dll
+*.json
