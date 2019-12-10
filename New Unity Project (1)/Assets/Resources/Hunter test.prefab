@@ -16,15 +16,15 @@ MonoBehaviour:
   group: 0
   OwnerShipWasTransfered: 0
   prefixBackup: -1
-  synchronization: 0
+  synchronization: 3
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 4021264565374122}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
+  viewIdField: 2
+  instantiationId: 2
   currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &243613616888408132
@@ -43,6 +43,20 @@ MonoBehaviour:
   hitPar: {fileID: 983491606303410139, guid: 479a1361a52da0944bf18fe50471d7b7, type: 3}
   damage: 30
   range: 10000
+--- !u!114 &2077736486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244390047149282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc582a3d1a998ff4aa71e7b080c46e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 0.02
+  smoothAmount: 6
 --- !u!1 &7058287785007668384
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,8 +326,8 @@ MonoBehaviour:
   - {fileID: -5073641284378972363}
   - {fileID: 6320241217934420535}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
+  viewIdField: 3
+  instantiationId: 3
   currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &-5073641284378972363
