@@ -43,4 +43,6 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
+  - RPC_GetTeam
+  - RPC_SentTeam
   DisableAutoOpenWizard: 1

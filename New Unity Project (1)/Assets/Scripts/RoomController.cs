@@ -3,6 +3,7 @@
 public class RoomController : MonoBehaviour
 {
     public int chooser;
+    public static RoomController RC;
     //Player instance prefab, must be located in the Resources folder
     public GameObject playerPrefab;
     public GameObject hunterPrefab;
@@ -10,9 +11,20 @@ public class RoomController : MonoBehaviour
     public Transform playerSpawnPoint;
     public Transform hunterSpawnPoint;
 
+    private void OnEnable()
+    {
+        if (RoomController.RC == null)
+        {
+            RoomController.RC = this;
+        }
+    }
+
+
     // Use this for initialization
     void Start()
     {
+
+
         //In case we started this demo with the wrong scene being active, simply load the menu scene
         if (!PhotonNetwork.connected)
         {
@@ -20,21 +32,24 @@ public class RoomController : MonoBehaviour
             return;
         }
 
-        chooser = Random.Range(1,2); //(1,2);
+        //chooser = 1;
 
         if (chooser == 1)
         {
+            Debug.Log("roomSpawn");
             //We're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
             PhotonNetwork.Instantiate(playerPrefab.name, playerSpawnPoint.position, Quaternion.identity, 0);
             PhotonNetwork.automaticallySyncScene = true;
+
         }
 
-        if (chooser == 2)
+        else if (chooser == 2)
         {
+            Debug.Log("roomSpawn");
             PhotonNetwork.Instantiate(hunterPrefab.name, hunterSpawnPoint.position, Quaternion.identity, 0);
             PhotonNetwork.automaticallySyncScene = true;
         }
-        
+
     }
 
     void OnGUI()
@@ -65,4 +80,19 @@ public class RoomController : MonoBehaviour
         //We have left the Room, return to the MainMenu
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
+
+    public void UpdateTeam()
+    {
+        Debug.Log("chooser update");
+        if (chooser == 1)
+        {
+            chooser = 2;
+        }
+        else
+        {
+            chooser = 1;
+        }
+        Debug.Log(chooser);
+    }
+
 }

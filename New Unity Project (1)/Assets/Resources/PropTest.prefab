@@ -373,6 +373,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241fac1c7db29bf4c80e71ae0b047a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAvatar: {fileID: 0}
+  PV: {fileID: -5520270673184630127}
+  myteam: 0
+  playerPrefab: {fileID: 5822729030849547194}
+  hunterPrefab: {fileID: 7692391659072138649, guid: 2125d52427197d345952d2ad8acfa56e,
+    type: 3}
+  playerSpawnPoint: {fileID: 0}
+  hunterSpawnPoint: {fileID: 0}
   localScripts:
   - {fileID: 5822729030849547195}
   localObject:
