@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp-Editor.dll:
+    - PhotonViewInspector
     - PunSceneSettings
     Assembly-CSharp.dll:
     - AudioRpc
+    - ChooseTeam
     - ClickAndDrag
     - ClickDetector
     - ColorPerPlayerApply
@@ -45,6 +47,8 @@ ScriptsOnlyBuild:
     - ThirdPersonNetwork
     - TransformIntoScript
     - WeaponScript
+    - WeaponSway
+    - hideGun
     - myThirdPersonController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -133,85 +137,93 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9956}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10044}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10074}
     - Class: 114
-      Script: {instanceID: 10120}
+      Script: {instanceID: 10122}
     - Class: 114
-      Script: {instanceID: 10314}
+      Script: {instanceID: 10316}
     - Class: 114
-      Script: {instanceID: 10380}
+      Script: {instanceID: 10382}
     - Class: 114
-      Script: {instanceID: 10386}
+      Script: {instanceID: 10388}
     - Class: 114
-      Script: {instanceID: 10406}
+      Script: {instanceID: 10408}
     - Class: 114
-      Script: {instanceID: 10550}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 10662}
+      Script: {instanceID: 10552}
     - Class: 114
-      Script: {instanceID: 10762}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10888}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 10896}
+      Script: {instanceID: 10890}
     - Class: 114
-      Script: {instanceID: 10928}
+      Script: {instanceID: 10898}
     - Class: 114
-      Script: {instanceID: 11022}
+      Script: {instanceID: 10930}
     - Class: 114
-      Script: {instanceID: 11090}
+      Script: {instanceID: 11026}
     - Class: 114
       Script: {instanceID: 11094}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11098}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11160}
+    - Class: 114
+      Script: {instanceID: 11372}
     - Class: 114
       Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11496}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11588}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11658}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11784}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11846}
     - Class: 114
-      Script: {instanceID: 11908}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11860}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 11874}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 15028}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 36558}
+      Script: {instanceID: 12056}
+    - Class: 114
+      Script: {instanceID: 12072}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 108272}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -278,33 +290,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9746}
     - Class: 114
+      Script: {instanceID: 9918}
+    - Class: 114
       Script: {instanceID: 9956}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10496}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 10506}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 11094}
+      Script: {instanceID: 11098}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11908}
+      Script: {instanceID: 11658}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11846}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 15028}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 36558}
+      Script: {instanceID: 11944}
+    - Class: 114
+      Script: {instanceID: 12020}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 108272}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -484,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 5d9597aac5ac7a389cc3de2f7a193f2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunSway
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -942,6 +968,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerScript
+  - hash:
+      serializedVersion: 2
       Hash: d4dacc6750ca362eb286d08d4a339689
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1086,6 +1118,12 @@ ScriptsOnlyBuild:
     className: PunTurnManager
   - hash:
       serializedVersion: 2
+      Hash: 1b6d691b63122d9fb8a4047d254adbe2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponScript
+  - hash:
+      serializedVersion: 2
       Hash: f3da7dc96bb8aee9efa3f969de21c05e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1152,7 +1190,7 @@ ScriptsOnlyBuild:
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
-      Hash: 5495382c71c12f827ac91e39d8c182e5
+      Hash: 89bcb9f706f3126d262c5026c705ef25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerNetworkSync
@@ -1210,6 +1248,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RpsDemoConnect
+  - hash:
+      serializedVersion: 2
+      Hash: 47bdc8cdcc5e127b6a008584e4e51cfa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TransformIntoScript
+  - hash:
+      serializedVersion: 2
+      Hash: 3a7a6cd388627db735e070904c73417b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChooseTeam
   - hash:
       serializedVersion: 2
       Hash: c5fd97cc10b89deaf7c60af66a6b0d5a
@@ -1386,6 +1436,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrbitAroundTarget
+  - hash:
+      serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1458,30 +1514,18 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 47bdc8cdcc5e127b6a008584e4e51cfa
+      Hash: 1f399bb5b1c4d9e86a85e1673259218e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TransformIntoScript
+    className: WeaponSway
   - hash:
       serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+      Hash: 5a61dadeddeb6b88d4ab23f3f0fa8379
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: OrbitAroundTarget
-  - hash:
-      serializedVersion: 2
-      Hash: 5d9597aac5ac7a389cc3de2f7a193f2b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GunSway
-  - hash:
-      serializedVersion: 2
-      Hash: 1b6d691b63122d9fb8a4047d254adbe2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WeaponScript
+    className: hideGun
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/PlaygroundScene.unity
-  playerPath: C:/Users/Glen/Desktop/MP games builds/New Unity Project (1).exe
+  playerPath: D:/Uni year 3/Build/New Unity Project (1).exe
